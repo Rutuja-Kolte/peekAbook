@@ -33,5 +33,5 @@ class LoginForm(FlaskForm):
 
 class PostForm(FlaskForm):
     title = StringField('Title',validators=[DataRequired()])
-    content = TextAreaField('Feedback',validators=[DataRequired()])
+    content = TextAreaField('Your Post',validators=[DataRequired()])
     submit = SubmitField('Post')
